@@ -1,0 +1,157 @@
+body {
+   font-size: 13px;
+   color: #444444;
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   max-width: 1170px;
+   margin: 26px auto;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   .slider__titles {
+      width: 100%;
+      max-height: 37px;
+      display: flex; 
+      img{
+         padding: 0 15px;
+      } 
+   }
+
+   .slider__title {
+      font-size: 31px;
+      margin-left: 31px;
+   }
+   
+   .slider-counter {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 5px;
+      cursor: pointer;
+   }
+
+   .slider-prev {
+      padding: 5px 8.5px;
+      background-color: #F6F6F6;
+      border-radius: 50%;
+      
+   }
+
+   .slider-next {
+      padding: 5px 8.5px;
+      background-color: #F6F6F6;
+      border-radius: 50%;
+      cursor: pointer;
+   }
+}
+
+.slider-wrapper {
+   margin-top: 20px;
+   overflow: hidden;
+}
+
+.slider-inner {
+   display: flex;
+   position: relative;
+   
+
+   .slide {
+      width: 25em;
+
+      
+   }
+
+   .slide__inner {
+      padding: 15px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 15px;
+      border: 1px solid #EEEEEE;
+      /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+   
+   }
+
+
+
+   .slide__img {
+      width: 100%;
+   }
+
+   .stocks{
+      display: flex;
+      position: absolute;
+   }
+
+   .new{
+      margin: 0 5px;
+      background-color: #EEFCF6;
+      color: #3DDC97;
+      padding: 5px 10px;
+   }
+
+   .bestseller{
+      margin: 0 5px;
+      background-color: #FCF4ED;
+      color: #E49F62;
+      padding: 5px 10px;
+   }
+
+   .name{
+      font-size: 18px;
+      margin: 5px 0;
+   }
+
+   .rating {
+      color: #00ADEF;
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      span {
+         margin: 0  5px;
+      }
+   }
+
+   .price  {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 19px;
+
+      s {
+         font-size: 13px;
+         padding: 0 25px;
+         color: #888888;
+      }
+   }
+
+   .add_to_cart {
+      background-color: #00ADEF;
+      color: #fff;
+      padding: 14px 40px 16px;
+      border-radius: 6px;
+   }
+
+   .interaction {
+      display: flex;
+      padding-top: 15px;
+      justify-content: space-between;
+      /* .add_to_cart {
+
+      } */
+   }
+}
+
+
+.transformAnimation {
+   transition: .4s all ease-in-out;
+}
