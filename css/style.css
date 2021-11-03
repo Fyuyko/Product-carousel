@@ -4,11 +4,13 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 .container {
   max-width: 1170px;
   margin: 26px auto;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header {
@@ -38,6 +40,7 @@ body {
 .header .slider__title {
   font-size: 31px;
   margin-left: 31px;
+  line-height: 37px;
 }
 
 .header .slider-counter {
@@ -47,18 +50,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 5px;
+  margin: 0 20px;
   cursor: pointer;
 }
 
 .header .slider-prev {
-  padding: 5px 8.5px;
+  padding: 5px 9px;
   background-color: #F6F6F6;
   border-radius: 50%;
+  margin-right: 10px;
 }
 
 .header .slider-next {
-  padding: 5px 8.5px;
+  padding: 5px 9px;
   background-color: #F6F6F6;
   border-radius: 50%;
   cursor: pointer;
@@ -95,11 +99,18 @@ body {
           align-items: flex-start;
   margin: 0 15px;
   border: 1px solid #EEEEEE;
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .slider-inner .slide__img {
   width: 100%;
+}
+
+.slider-inner .control {
+  margin-top: 20px;
+  color: #888888;
 }
 
 .slider-inner .stocks {
@@ -107,6 +118,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  width: 70%;
 }
 
 .slider-inner .new {
@@ -136,7 +148,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5px 0;
 }
 
 .slider-inner .rating span {
@@ -163,13 +174,6 @@ body {
   color: #888888;
 }
 
-.slider-inner .add_to_cart {
-  background-color: #00ADEF;
-  color: #fff;
-  padding: 14px 40px 16px;
-  border-radius: 6px;
-}
-
 .slider-inner .interaction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,9 +182,23 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* .add_to_cart {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-      } */
+.slider-inner .add_to_cart {
+  font-size: 15px;
+  background-color: #00ADEF;
+  color: #fff;
+  padding: 14px 40px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.slider-inner .likebtn {
+  margin-right: 10px;
 }
 
 .transformAnimation {

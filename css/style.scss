@@ -4,11 +4,14 @@ body {
    overflow-x: hidden;
    margin: 0;
    padding: 0;
+   font-family: 'Nunito', sans-serif;
 }
+
 
 .container {
    max-width: 1170px;
    margin: 26px auto;
+   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .header {
@@ -26,26 +29,29 @@ body {
    }
 
    .slider__title {
+      
       font-size: 31px;
       margin-left: 31px;
+      line-height: 37px;
    }
    
    .slider-counter {
       display: flex;
       justify-content: space-between;
-      margin: 0 5px;
+      margin: 0 20px;
       cursor: pointer;
    }
 
    .slider-prev {
-      padding: 5px 8.5px;
+      padding: 5px 9px;
       background-color: #F6F6F6;
       border-radius: 50%;
+      margin-right: 10px;
       
    }
 
    .slider-next {
-      padding: 5px 8.5px;
+      padding: 5px 9px;
       background-color: #F6F6F6;
       border-radius: 50%;
       cursor: pointer;
@@ -76,7 +82,9 @@ body {
       align-items: flex-start;
       margin: 0 15px;
       border: 1px solid #EEEEEE;
-      /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+      box-sizing: border-box;
+      border-radius: 5px;
+      
    
    }
 
@@ -85,10 +93,16 @@ body {
    .slide__img {
       width: 100%;
    }
+   
+   .control {
+      margin-top: 20px;
+      color: #888888;
+   }
 
    .stocks{
       display: flex;
       position: absolute;
+      width: 70%;
    }
 
    .new{
@@ -114,7 +128,6 @@ body {
       color: #00ADEF;
       display: flex;
       align-items: center;
-      margin: 5px 0;
       span {
          margin: 0  5px;
       }
@@ -134,21 +147,29 @@ body {
       }
    }
 
-   .add_to_cart {
-      background-color: #00ADEF;
-      color: #fff;
-      padding: 14px 40px 16px;
-      border-radius: 6px;
-   }
-
    .interaction {
       display: flex;
       padding-top: 15px;
       justify-content: space-between;
-      /* .add_to_cart {
-
-      } */
+      align-items: center;
+      
    }
+
+   .add_to_cart {
+      font-size: 15px;
+      background-color: #00ADEF;
+      color: #fff;
+      padding: 14px 40px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+   }
+
+   .likebtn {
+      margin-right: 10px;
+   }
+
+   
 }
 
 
